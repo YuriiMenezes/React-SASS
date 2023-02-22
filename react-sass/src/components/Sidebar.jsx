@@ -1,25 +1,22 @@
+import SocialNetworkContainer from "./SocialNetworkContainer";
+import InformationContainer from "./InformationContainer";
 
-import Avatar from '../img/Yurii.jpeg';
-import '../styles/components/sidebar.sass';
+import Avatar from "../img/Yurii.jpeg";
 
+import "../styles/components/sidebar.sass";
 
 const Sidebar = () => {
-    return (
-    
-        <aside id="sidebar">
-
-            <img src={Avatar} alt='Yuri Miranda de Menezes' />
-            <p className="title">Desenvolvedor</p>
-            <p>Redes Sociais</p>
-            <p>Informações de Contato</p>
-            <a href="#" className="btn">
-                Download Currículo
-            </a>
-
-
-        </aside>
-
-    )
+  return (
+    <aside id="sidebar">
+      <img src={Avatar} alt="Yuri Miranda de Menezes" height={285} width={200}/>
+      <p className="title">Desenvolvedor</p>
+      <SocialNetworkContainer />
+      <InformationContainer />
+      <a href="#" className="btn">
+        Download currículo
+      </a>
+    </aside>
+  );
 };
 
 export default Sidebar;

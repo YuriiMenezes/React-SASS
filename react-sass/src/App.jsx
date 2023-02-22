@@ -1,21 +1,16 @@
-import MainContent from './components/MainContent';
-import Sidebar from './components/Sidebar';
-import './styles/components/app.sass';
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
 
+import "./styles/components/app.sass";
 
 function App() {
-  
-
-  return ( 
-    <div id="portifolio">
-      
-      <h1>React + Sass</h1>
-
-      <Sidebar/>
+  return (
+    <div id="portfolio">
+      <h1>Yuri Miranda de Menezes</h1>
+      <Sidebar />
       <MainContent />
-
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
